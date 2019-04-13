@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泰山職訓中心</title>
+    <style>
+		body{
+			/* 背景顏色 */
+			/* background-color:purple; */
+
+            
+
+            
+			 background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./work1.jpg); 
+			/* 背景重複 
+			no-repeat不重複 
+			repeat-x 左右重複
+			reppeat-y 上下重複
+			repeat 重複
+			*/
+			background-repeat:no-repeat;
+			/* 背景位置
+				距離單位(px vh vw %)*2 上下 左右
+				或名稱
+			*/
+			background-position: center;
+			/* 背景大小
+				距離單位(px vh vw %)*2 寬度 高度
+				cover 縮放圖片滿版
+			*/
+			background-size:cover;
+			/* 讓背景固定 */
+			background-attachment: fixed;
+			width: 100vw;
+			height:100vh;
+		}
+
+        h1{
+    /* 文字顏色 */
+
+    color:blue !important;
+}
+
+/* .代表class */
+.blue{
+    color:blue !important;
+}
+.white{
+
+    color :white;
+}
+.big{
+    /* 文字大小 */
+
+    font-size : 100px;
+}
+
+.italic{
+    font-style: italic;
+}
+.bold{
+/* bold 粗體 bolder 加粗 */
+    font-weight: bold;
+}
+ /* [*號] 代表網頁所有東西 */
+*{
+font-family: 'Dokdo','微軟正黑體';
+}
+.center{
+    /* 文字位置 left 左 center 中  right 右 */
+
+    text-align:center;
+}
+
+/* 同時符合兩種class者 */
+.blue.center{
+
+/*
+ overline 上面線
+line-through 刪除線
+underline 底線
+ */
+
+    /* text-decoration: line-through; */
+}
+ a{
+    text-decoration: none;
+    font-size : 50px;
+    color: lemonchiffon;
+ }
+ a:hover{
+    color:magenta;
+ }
+ a:visited{
+    color:olivedrab;
+ }
+ a:active{
+    color:slateblue;
+ }
+
+ .shadow{
+     text-shadow: 0px 0px 10px white;
+ }
+
+ .shadow2{
+     text-shadow: 5px 5px 5px white;
+ }
+ p:hover{
+     color : blue;
+     text-shadow: 0px 0px 10px red;
+ }
+
+ #work1{
+   /* 粗細 樣式 顏色 */
+   border:10px solid blue;
+   filter:saturate(0.5) contrast(2);
+   width:550px;
+   height:550px;
+}
+
+#work2{
+ border-top: 10px solid blue;
+ border-right: 7px dashed red;
+ border-bottom: 5px dotted green;
+ border-left: 15px inset purple;
+ 
+/* 圓角 */
+ border-radius: 50%;
+
+ /* box-shadow 水平 垂直 模糊 陰影 顏色 */
+ box-shadow: 0px 0px 10px 10px red;
+/* 透明度 0.0~1.0 */
+opacity: 0.8;
+
+}
+
+#gift{
+    /* 
+-webkit-filter:saturate(0.5);
+
+grayscale灰階
+sepia懷舊
+saturate飽和
+hue-rotate色相旋轉
+invert負片
+opacity不透明
+brightness亮度
+contrast對比
+blur模糊
+drop-shadow下拉陰影
+
+
+    drop-shadow 根據PNG的輪廓產生陰影
+    drop-shadow 水平 垂直 模糊  顏色 */
+    filter: drop-shadow(0px 0px 10px red);
+}
+	</style>
+</head>
+<body>
+    
+    <h1 class="blue big center shadow2">  泰山職業訓練場介紹 </h1>
+    
+    <img src="./main.png" alt="" id="">
+    <img src="./main.png" alt="" id="">
+    <img src="./main.png" alt="" id="">
+    <img src="./main.png" alt="" id="">
+    <img src="./main.png" alt="" id="">
+    <img src="./main.png" alt="" id="">
+   
+    <h2 class="blue  center shadow">地址：24302新北市泰山區貴子里致遠新村55之1號 <br> 
+     電話：02-2901-8274 <br>     
+     傳真：02-2908-4773 </h2>   
+    
+    
+    <h2 class="bold big white">訓練職類</h2>
+    <h2 class="big shadow2">  
+        精密機械職類
+      
+    <img src="./work1.jpg" alt="" id="work1">
+    <br>
+    <br>
+    <h3 class="big italic white">數位影音設計與行銷職類</h3>
+    <br>
+    <p class="blue">泰山職業訓練場交通位置描述：位於明志科技大學校內，由工專路進入明志校內，沿明一路/泰山職訓中心路標而上，約800公尺。</p>
+    <br>
+    
+    <div  style="width:550px;height:550px;margin:0 auto;">
+    <img src="./work2.jpg" alt="" id="work2" width="95%" height="95%" >  
+    </div>
+    <!-- <p class="big blue center shadow">中文字</p>
+    <p class="bold big">addsadasdasd</p> -->
+    <a href="https://fonts.google.com/?selection.family=Dokdo">Google Fonts</a>
+
+    
+    <br>
+    <br>
+
+    <img src="./gift.png" alt="" id="gift" width="300px" height="300px">  
+</body>
+</html>
